@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+		<title>Enviar Notícia</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/estiloGeral.css">
+	</head>
+	<body>
+		<header>
+		<nav class="navbar navbar-expand-sm bg-info navbar-dark sticky-top">
+			<a class="navbar-brand" href="#">
+    			<img src="php/imgs/logo.png" alt="logo" style="width:40px;">
+  			</a>
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">TechNews</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Home</a>
+				</li>
+			</ul>
+		</nav>
+		<header>
+		<br>
+		<div class="container">
+			<form method="POST" action="php/noticia.php" class="form-horizontal" enctype="multipart/form-data">
+				<label>Título:</label><br>
+				<input type="text" class="form-control" name="titulo" id="titulo"><br>
+				<label>Descrição:</label><br>
+				<textarea class="form-control" rows="7" name="desc" id="desc"></textarea><br>
+				<label>Autor:</label><br>
+				<input type="text" class="form-control" name="autor" id="autor"><br>
+				<label>Imagem:</label><br><input type="file" class="form-control" name="img" id="img"><br>
+				<button type="submit" class="btn btn-info" name="enviarNoticia">Enviar notícia</button>
+				<a href="index.html">Cancelar</a>
+			</form>
+		</div>
+		<br>
+		 <footer class="footer bg-info ">
+      		<div class="container">
+        		<span id="footer"> © Copyright 2018 TechNews - All Rights Reserved</span>
+      		</div>
+    	</footer>
+	</body>
+</html>
